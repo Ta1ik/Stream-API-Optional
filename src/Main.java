@@ -15,12 +15,12 @@ public class Main {
                 (x, y) -> System.out.printf("Min: %s, Max: %s%n", x, y)
         );
 
+        stream.close();
+
         //#2
         List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,10,12,14,15));
 
         System.out.println("Count of even element: " + evenNumber(list));
-
-        stream.close();
     }
 
     public static <T> void findMinMax(
