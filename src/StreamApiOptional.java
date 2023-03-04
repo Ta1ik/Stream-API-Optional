@@ -3,7 +3,7 @@ import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class StreamApi {
+public class StreamApiOptional {
     public static void main(String[] args) {
         //#1
         Stream<Integer> stream = Stream.of(3, 7, 4, 9, 1, 6);
@@ -40,3 +40,4 @@ public class StreamApi {
                 .filter(s -> s % 2 == 0).count();
     }
 }
+
