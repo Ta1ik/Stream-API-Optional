@@ -38,8 +38,6 @@ public class Main {
 
     public static int evenNumber (List <Integer> numbers) {
         return (int) numbers.stream()
-                .filter(s -> s % 2 ==0)
-                .collect(Collectors.toList())
-                .stream().count();
+                .filter(s -> s % 2 == 0).count();
     }
 }
